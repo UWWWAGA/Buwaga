@@ -705,6 +705,7 @@ body {
   transition: var(--transition);
   cursor: pointer;
   border: 2px solid transparent;
+  cursor: default;
 }
 
 .stat-item:hover {
@@ -936,10 +937,12 @@ body {
   padding-bottom: 30px;
   opacity: 0.5;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .card-item.active {
   opacity: 1;
+  cursor: default;
 }
 
 .card-item:last-child {
@@ -1128,7 +1131,7 @@ body {
   background: var(--bg-white);
   border-radius: var(--border-radius-xs);
   transition: var(--transition);
-  cursor: pointer;
+  cursor: default;
 }
 
 .achievement:hover {
