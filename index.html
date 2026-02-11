@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Фронтенд-разработчик Константин">
+  <meta name="theme-color" content="#516acc">
+  <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+  <title>Портфолио | Константин - Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- Фоновые элементы для интерактива -->
+  <div class="background-effects">
+    <div class="particle" data-particle="1"></div>
+    <div class="particle" data-particle="2"></div>
+    <div class="particle" data-particle="3"></div>
+    <div class="particle" data-particle="4"></div>
+    <div class="particle" data-particle="5"></div>
+    <div class="particle" data-particle="6"></div>
+    <div class="particle" data-particle="7"></div>
+  </div>
+
+  <!-- Эффект свечения -->
+  <div class="glow-effect"></div>
+
+  <!-- Основной контент -->
+  <main class="main-content">
+    <!-- Карточка профиля -->
+    <article class="card" data-state="#about">
+      <header class="card-header">
+        <div class="header-background"></div>
+        <div class="animated-bg">
+          <div class="wave wave-1"></div>
+          <div class="wave wave-2"></div>
+          <div class="wave wave-3"></div>
+        </div>
+        <h1 class="card-fullname">Константин</h1>
+
+        <p class="card-jobtitle">Frontend Developer</p>
+        <div class="card-experience">
+          <span class="experience-badge">
+            <i class="fas fa-rocket"></i>
+            2+ года опыта
+          </span>
+          <div class="experience-bar">
+            <div class="experience-progress" data-level="85"></div>
+          </div>
+        </div>
+      </header>
+
+      <div class="card-main">
+        <!-- Секция "Обо мне" -->
+        <section class="card-section is-active" id="about" aria-labelledby="about-title">
+          <div class="card-content">
+            <h2 class="card-subtitle" id="about-title">
+              <i class="fas fa-user-circle subtitle-icon"></i>
+              Обо мне
+            </h2>
+            <p class="card-desc">Фронтенд-разработчик, создаю интуитивные интерфейсы. Превращаю сложные задачи в
+              элегантные решения. Для меня код — это забота о пользовательском опыте.</p>
+
+            <div class="skills-section">
+              <div class="skills-header">
+                <h3 class="skills-title">
+                  <i class="fas fa-code skills-icon"></i>
+                  Ключевые навыки
+                </h3>
+              </div>
+              <div class="skills-list">
+                <span class="skill-tag" data-skill="95">
+                  <i class="fab fa-html5"></i>
+                  HTML5
+                </span>
+                <span class="skill-tag" data-skill="90">
+                  <i class="fab fa-css3-alt"></i>
+                  CSS3
+                </span>
+                <span class="skill-tag" data-skill="85">
+                  <i class="fab fa-js"></i>
+                  JavaScript
+                </span>
+                <span class="skill-tag" data-skill="65">
+                  <i class="fas fa-tools"></i>
+                  Php
+                </span>
+                <span class="skill-tag" data-skill="95">
+                  <i class="fas fa-mobile-alt"></i>
+                  Адаптивная верстка
+                </span>
+                <span class="skill-tag" data-skill="100">
+                  <i class="fas fa-paint-brush"></i>
+                  UI/UX
+                </span>
+                <span class="skill-tag" data-skill="70">
+                  <i class="fab fa-git-alt"></i>
+                  Git
+                </span>
+                <span class="skill-tag" data-skill="65">
+                  <i class="fas fa-tools"></i>
+                  Vite
+                </span>
+              </div>
+            </div>
+
+            <div class="interactive-stats">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-value" data-count="80">0</span>
+                  <span class="stat-label">Проектов</span>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-value" data-count="600">0+</span>
+                  <span class="stat-label">Часов кода</span>
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="stat-info">
+                  <span class="stat-value" data-count="62">0</span>
+                  <span class="stat-label">Довольных клиентов</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-social">
+            <p class="social-title">
+              <i class="fas fa-share-alt"></i>
+              Связаться со мной:
+            </p>
+            <div class="social-links">
+              <a class="card-social-link social-telegram" href="https://t.me/buwaga" aria-label="Telegram"
+                target="_blank" rel="noopener noreferrer" data-social="telegram">
+                <div class="social-icon-wrapper">
+                  <i class="social-icon social-icon--first">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telegram"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                    </svg>
+
+                  </i>
+                </div>
+                <span class="social-label">Telegram</span>
+                <span class="social-hint">Быстрый ответ</span>
+              </a>
+              <a class="card-social-link social-kwork" href="https://kwork.ru/user/buwaga" aria-label="Kwork"
+                target="_blank" rel="noopener noreferrer" data-social="kwork">
+                <div class="social-icon-wrapper">
+
+                  <?xml version="1.0" encoding="iso-8859-1"?>
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path d="M343.506,101.209c-8.298-40.712-44.38-71.442-87.506-71.442s-79.209,30.729-87.506,71.442H0v160.744
+			c0,16.183,4.348,31.361,11.907,44.464v175.815h488.186V306.418C507.652,293.314,512,278.136,512,261.953V101.209H343.506z
+			 M256,65.488c23.284,0,43.135,14.933,50.509,35.721H205.491C212.863,80.421,232.716,65.488,256,65.488z M464.372,446.512H47.628
+			v-105.61c12.45,6.599,26.629,10.354,41.674,10.354v29.767h35.721v-29.767h261.953v29.767h35.721v-29.767
+			c15.046,0,29.224-3.755,41.674-10.354V446.512z M476.279,261.953c0,29.545-24.037,53.581-53.581,53.581v-29.767h-35.721v29.767
+			H125.023v-29.767H89.302v29.767c-29.545,0-53.581-24.037-53.581-53.581V136.93h440.558V261.953z" />
+                      </g>
+                    </g>
+                    <g>
+                      <g>
+                        <path
+                          d="M178.605,172.651v107.163h154.791V172.651H178.605z M297.674,244.093h-83.349v-35.721h83.349V244.093z" />
+                      </g>
+                    </g>
+                  </svg>
+
+                </div>
+                <span class="social-label">Kwork</span>
+                <span class="social-hint">Заказы</span>
+              </a>
+              <a class="card-social-link social-github" href="https://github.com/UWWWAGA" aria-label="GitHub"
+                target="_blank" rel="noopener noreferrer" data-social="github">
+                <div class="social-icon-wrapper">
+                  <i class="social-icon social-icon--third">
+
+                    <svg viewBox="0 -0.5 25 25" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="m12.301 0h.093c2.242 0 4.34.613 6.137 1.68l-.055-.031c1.871 1.094 3.386 2.609 4.449 4.422l.031.058c1.04 1.769 1.654 3.896 1.654 6.166 0 5.406-3.483 10-8.327 11.658l-.087.026c-.063.02-.135.031-.209.031-.162 0-.312-.054-.433-.144l.002.001c-.128-.115-.208-.281-.208-.466 0-.005 0-.01 0-.014v.001q0-.048.008-1.226t.008-2.154c.007-.075.011-.161.011-.249 0-.792-.323-1.508-.844-2.025.618-.061 1.176-.163 1.718-.305l-.076.017c.573-.16 1.073-.373 1.537-.642l-.031.017c.508-.28.938-.636 1.292-1.058l.006-.007c.372-.476.663-1.036.84-1.645l.009-.035c.209-.683.329-1.468.329-2.281 0-.045 0-.091-.001-.136v.007c0-.022.001-.047.001-.072 0-1.248-.482-2.383-1.269-3.23l.003.003c.168-.44.265-.948.265-1.479 0-.649-.145-1.263-.404-1.814l.011.026c-.115-.022-.246-.035-.381-.035-.334 0-.649.078-.929.216l.012-.005c-.568.21-1.054.448-1.512.726l.038-.022-.609.384c-.922-.264-1.981-.416-3.075-.416s-2.153.152-3.157.436l.081-.02q-.256-.176-.681-.433c-.373-.214-.814-.421-1.272-.595l-.066-.022c-.293-.154-.64-.244-1.009-.244-.124 0-.246.01-.364.03l.013-.002c-.248.524-.393 1.139-.393 1.788 0 .531.097 1.04.275 1.509l-.01-.029c-.785.844-1.266 1.979-1.266 3.227 0 .025 0 .051.001.076v-.004c-.001.039-.001.084-.001.13 0 .809.12 1.591.344 2.327l-.015-.057c.189.643.476 1.202.85 1.693l-.009-.013c.354.435.782.793 1.267 1.062l.022.011c.432.252.933.465 1.46.614l.046.011c.466.125 1.024.227 1.595.284l.046.004c-.431.428-.718 1-.784 1.638l-.001.012c-.207.101-.448.183-.699.236l-.021.004c-.256.051-.549.08-.85.08-.022 0-.044 0-.066 0h.003c-.394-.008-.756-.136-1.055-.348l.006.004c-.371-.259-.671-.595-.881-.986l-.007-.015c-.198-.336-.459-.614-.768-.827l-.009-.006c-.225-.169-.49-.301-.776-.38l-.016-.004-.32-.048c-.023-.002-.05-.003-.077-.003-.14 0-.273.028-.394.077l.007-.003q-.128.072-.08.184c.039.086.087.16.145.225l-.001-.001c.061.072.13.135.205.19l.003.002.112.08c.283.148.516.354.693.603l.004.006c.191.237.359.505.494.792l.01.024.16.368c.135.402.38.738.7.981l.005.004c.3.234.662.402 1.057.478l.016.002c.33.064.714.104 1.106.112h.007c.045.002.097.002.15.002.261 0 .517-.021.767-.062l-.027.004.368-.064q0 .609.008 1.418t.008.873v.014c0 .185-.08.351-.208.466h-.001c-.119.089-.268.143-.431.143-.075 0-.147-.011-.214-.032l.005.001c-4.929-1.689-8.409-6.283-8.409-11.69 0-2.268.612-4.393 1.681-6.219l-.032.058c1.094-1.871 2.609-3.386 4.422-4.449l.058-.031c1.739-1.034 3.835-1.645 6.073-1.645h.098-.005zm-7.64 17.666q.048-.112-.112-.192-.16-.048-.208.032-.048.112.112.192.144.096.208-.032zm.497.545q.112-.08-.032-.256-.16-.144-.256-.048-.112.08.032.256.159.157.256.047zm.48.72q.144-.112 0-.304-.128-.208-.272-.096-.144.08 0 .288t.272.112zm.672.673q.128-.128-.064-.304-.192-.192-.32-.048-.144.128.064.304.192.192.32.044zm.913.4q.048-.176-.208-.256-.24-.064-.304.112t.208.24q.24.097.304-.096zm1.009.08q0-.208-.272-.176-.256 0-.256.176 0 .208.272.176.256.001.256-.175zm.929-.16q-.032-.176-.288-.144-.256.048-.224.24t.288.128.225-.224z" />
+                    </svg>
+                  </i>
+                </div>
+                <span class="social-label">GitHub</span>
+                <span class="social-hint">Проекты</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Секция "Опыт" -->
+        <section class="card-section" id="experience" aria-labelledby="experience-title">
+          <div class="card-content">
+            <h2 class="card-subtitle" id="experience-title">
+              <i class="fas fa-briefcase subtitle-icon"></i>
+              Путь в разработке
+            </h2>
+
+            <div class="timeline-controls">
+              <button class="timeline-nav prev-year" aria-label="Предыдущий год">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <div class="timeline-years">
+                <span class="year active" data-year="2023">2023</span>
+                <span class="year" data-year="2024">2024</span>
+                <span class="year" data-year="2025">2025</span>
+              </div>
+              <button class="timeline-nav next-year" aria-label="Следующий год">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="card-timeline">
+              <article class="card-item active" data-year="2023">
+                <div class="timeline-dot">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h3 class="card-item-title">Знакомство с разработкой</h3>
+                    <span class="timeline-badge">Начало</span>
+                  </div>
+                  <p class="card-item-desc">Изучал основы верстки и JavaScript, создавал первые проекты. Освоил HTML5,
+                    CSS3 и базовый JavaScript. Выполнил 5 учебных проектов.</p>
+                  <div class="timeline-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                  </div>
+                  <div class="timeline-progress">
+                    <div class="progress-bar" style="width: 40%"></div>
+                    <span class="progress-text">40% пути</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-item" data-year="2024">
+                <div class="timeline-dot">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h3 class="card-item-title">Углубление знаний</h3>
+                    <span class="timeline-badge">Развитие</span>
+                  </div>
+                  <p class="card-item-desc">Изучил продвинутые техники верстки, освоил современные инструменты
+                    разработки. Работал над 12 реальными проектами.</p>
+                  <div class="timeline-tech">
+                    <span class="tech-tag">Scss</span>
+                    <span class="tech-tag">Sass</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Vite</span>
+                  </div>
+                  <div class="timeline-progress">
+                    <div class="progress-bar" style="width: 75%"></div>
+                    <span class="progress-text">75% пути</span>
+                  </div>
+                </div>
+              </article>
+
+              <article class="card-item" data-year="2025">
+                <div class="timeline-dot">
+                  <div class="dot-pulse"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h3 class="card-item-title">Профессиональный рост</h3>
+                    <span class="timeline-badge">Текущий</span>
+                  </div>
+                  <p class="card-item-desc">Создаю проекты с нуля на фрилансе: дизайн, вёрстка, full-stack
+                    разработка. Работаю над коммерческими задачами.</p>
+                  <div class="timeline-tech">
+                    <span class="tech-tag">Design</span>
+                  </div>
+                  <div class="timeline-progress">
+                    <div class="progress-bar" style="width: 95%"></div>
+                    <span class="progress-text">95% пути</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="achievements">
+              <h3 class="achievements-title">
+                <i class="fas fa-trophy"></i>
+                Достижения
+              </h3>
+              <div class="achievements-list">
+                <div class="achievement">
+                  <i class="fas fa-medal"></i>
+                  <span>80 выполненных проектов</span>
+                </div>
+                <div class="achievement">
+                  <i class="fas fa-star"></i>
+                  <span>Рейтинг 5.0 на Kwork</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Секция "Контакты" -->
+        <section class="card-section" id="contact" aria-labelledby="contact-title">
+          <div class="card-content">
+            <h2 class="card-subtitle" id="contact-title">
+              <i class="fas fa-envelope subtitle-icon"></i>
+              Контакты
+            </h2>
+
+            <div class="contact-info">
+              <div class="contact-item" data-contact="telegram">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-paper-plane contact-icon"></i>
+                  <div class="contact-pulse"></div>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">Telegram</p>
+                  <p class="contact-value">
+                    <a href="https://t.me/buwaga" target="_blank" rel="noopener noreferrer">@buwaga</a>
+                  </p>
+                  <button class="contact-copy" data-text="@buwaga">
+                    <i class="far fa-copy"></i>
+                    Скопировать
+                  </button>
+                </div>
+                <div class="contact-status">
+                  <i class="fas fa-bolt"></i>
+                  <span>Онлайн</span>
+                </div>
+              </div>
+
+              <div class="contact-item" data-contact="location">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-map-marker-alt contact-icon"></i>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">Локация</p>
+                  <p class="contact-value">Удалённо / Россия</p>
+                  <div class="timezone">
+                    <i class="far fa-clock"></i>
+                    <span>МСК (UTC+3)</span>
+                  </div>
+                </div>
+                <div class="contact-status">
+                  <i class="fas fa-globe"></i>
+                  <span>Доступен</span>
+                </div>
+              </div>
+
+              <div class="contact-item" data-contact="schedule">
+                <div class="contact-icon-wrapper">
+                  <i class="fas fa-calendar-alt contact-icon"></i>
+                </div>
+                <div class="contact-details">
+                  <p class="contact-label">Расписание</p>
+                  <p class="contact-value">Пн-Вс, 14:00-03:00</p>
+                  <div class="schedule-indicator">
+                    <div class="schedule-dot mon"></div>
+                    <div class="schedule-dot tue"></div>
+                    <div class="schedule-dot wed"></div>
+                    <div class="schedule-dot thu"></div>
+                    <div class="schedule-dot fri"></div>
+                    <div class="schedule-dot sat"></div>
+                    <div class="schedule-dot sun"></div>
+                  </div>
+                </div>
+                <div class="contact-status">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Работаю</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="action-buttons">
+              <a href="https://t.me/buwaga" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-paper-plane"></i>
+                <span class="btn-text">Написать в Telegram</span>
+                <span class="btn-hint">Ответ в течение 30 минут</span>
+              </a>
+            </div>
+
+            <div class="availability">
+              <div class="availability-status">
+                <div class="pulse-ring"></div>
+                <i class="fas fa-circle availability-dot"></i>
+                <span class="availability-text">Доступен для новых проектов</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Навигация -->
+        <nav class="card-navigation" aria-label="Навигация по разделам портфолио">
+          <button class="nav-btn is-active" data-section="#about" aria-label="Раздел 'Обо мне'" aria-current="page">
+            <div class="nav-icon">
+              <i class="fas fa-user"></i>
+              <span class="nav-notification" data-count="3"></span>
+            </div>
+            <span class="nav-label">Обо мне</span>
+            <div class="nav-indicator"></div>
+          </button>
+          <button class="nav-btn" data-section="#experience" aria-label="Раздел 'Опыт работы'">
+            <div class="nav-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <span class="nav-label">Опыт</span>
+            <div class="nav-indicator"></div>
+          </button>
+          <button class="nav-btn" data-section="#contact" aria-label="Раздел 'Контакты'">
+            <div class="nav-icon">
+              <i class="fas fa-envelope"></i>
+              <span class="nav-notification" data-count="1"></span>
+            </div>
+            <span class="nav-label">Контакты</span>
+            <div class="nav-indicator"></div>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Индикатор загрузки -->
+      <div class="loading-indicator" aria-hidden="true">
+        <div class="loading-spinner">
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+          <div class="spinner-ring"></div>
+          <div class="spinner-center"></div>
+        </div>
+      </div>
+
+      <!-- Прогресс скролла -->
+      <div class="scroll-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Уведомления -->
+  <div class="notification" id="notification" aria-live="polite">
+    <div class="notification-content">
+      <i class="notification-icon"></i>
+      <span class="notification-text"></span>
+    </div>
+  </div>
+</body>
+
+</html>
