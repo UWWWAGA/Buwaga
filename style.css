@@ -858,8 +858,8 @@ body {
 }
 
 .timeline-nav {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   background: var(--bg-white);
   border: none;
   border-radius: 50%;
@@ -879,7 +879,7 @@ body {
 
 .timeline-years {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .year {
