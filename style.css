@@ -1,4 +1,3 @@
-/* CSS Reset и базовые стили */
 :root {
   --primary-color: #516acc;
   --primary-light: rgba(81, 106, 204, 0.1);
@@ -40,7 +39,7 @@ a:active {
   text-decoration: none;
 }
 
-/* Темная тема */
+
 [data-theme="dark"] {
   --primary-color: #6b83ff;
   --primary-light: rgba(107, 131, 255, 0.15);
@@ -140,7 +139,6 @@ body {
   transition: background 0.5s ease;
 }
 
-/* Эффект свечения */
 .glow-effect {
   position: fixed;
   top: 50%;
@@ -168,7 +166,6 @@ body {
   }
 }
 
-/* Фоновые эффекты */
 .background-effects {
   position: fixed;
   top: 0;
@@ -275,7 +272,6 @@ body {
   }
 }
 
-/* Основной контейнер */
 .main-content {
   width: 100%;
   max-width: 900px;
@@ -296,7 +292,6 @@ body {
   }
 }
 
-/* Карточка */
 .card {
   background: var(--bg-card);
   backdrop-filter: blur(20px);
@@ -316,7 +311,6 @@ body {
   transform: translateY(-5px);
 }
 
-/* Шапка карточки */
 .card-header {
   position: relative;
   height: 240px;
@@ -477,7 +471,6 @@ body {
   }
 }
 
-/* Основное содержимое карточки */
 .card-main {
   position: relative;
   padding: 30px 25px;
@@ -556,7 +549,6 @@ body {
   border-left: 4px solid var(--primary-color);
 }
 
-/* Секция навыков */
 .skills-section {
   margin-top: 25px;
 }
@@ -689,7 +681,6 @@ body {
   transition: width 1s ease-out;
 }
 
-/* Интерактивная статистика */
 .interactive-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -748,7 +739,6 @@ body {
   font-weight: 500;
 }
 
-/* Социальные ссылки */
 .card-social {
   padding-bottom: 20px;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -857,7 +847,6 @@ body {
   opacity: 0.9;
 }
 
-/* Таймлайн */
 .timeline-controls {
   display: flex;
   align-items: center;
@@ -1150,7 +1139,6 @@ body {
   font-weight: 500;
 }
 
-/* Контакты */
 .contact-info {
   margin-bottom: 25px;
 }
@@ -1539,7 +1527,6 @@ body {
   text-align: center;
 }
 
-/* Навигация */
 .card-navigation {
   display: flex;
   background: var(--bg-light);
@@ -1647,7 +1634,6 @@ body {
   opacity: 0;
 }
 
-/* Быстрые действия */
 .quick-actions {
   position: fixed;
   right: 20px;
@@ -1705,7 +1691,6 @@ body {
   transform: translateX(0);
 }
 
-/* Индикатор загрузки */
 .loading-indicator {
   position: absolute;
   top: 0;
@@ -1773,7 +1758,6 @@ body {
   display: block;
 }
 
-/* Прогресс скролла */
 .scroll-progress {
   position: absolute;
   top: 0;
@@ -1791,7 +1775,6 @@ body {
   transition: width 0.1s ease;
 }
 
-/* Уведомления */
 .notification {
   position: fixed;
   top: 20px;
@@ -1833,7 +1816,6 @@ body {
   font-weight: 500;
 }
 
-/* Модальное окно */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -1896,7 +1878,6 @@ body {
   transform: rotate(90deg);
 }
 
-/* Футер */
 .page-footer {
   text-align: center;
   padding: 20px;
@@ -1954,7 +1935,6 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Адаптивность */
 @media (max-width: 480px) {
   body {
     font-size: 15px;
@@ -2352,7 +2332,6 @@ body {
   }
 }
 
-/* Минимальная ширина 280px */
 @media (max-width: 280px) {
   html {
     font-size: 13px;
@@ -2385,7 +2364,6 @@ body {
   }
 }
 
-/* Портретная ориентация на мобильных */
 @media (max-height: 700px) and (orientation: portrait) {
   body {
     padding: 10px;
@@ -2406,7 +2384,6 @@ body {
   }
 }
 
-/* Ландшафтная ориентация на мобильных */
 @media (max-height: 500px) and (orientation: landscape) {
   body {
     padding: 10px;
@@ -2439,7 +2416,6 @@ body {
   }
 }
 
-/* Доступность */
 @media (prefers-reduced-motion: reduce) {
 
   *,
@@ -2451,7 +2427,6 @@ body {
   }
 }
 
-/* Фокус состояния */
 button:focus-visible,
 a:focus-visible,
 input:focus-visible {
@@ -2460,7 +2435,6 @@ input:focus-visible {
 }
 
 
-/* Улучшенная темная тема */
 @media (prefers-color-scheme: dark) {
   :root {
     --text-primary: #ffffff;
@@ -2521,9 +2495,6 @@ input:focus-visible {
     background: rgba(255, 255, 255, 0.05);
   }
 }
-
-
-/* Код для новых классов */
 
 svg {
 
